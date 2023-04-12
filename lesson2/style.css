@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fjalla+One&family=Indie+Flower&family=Rubik+Pixels&family=Sedgwick+Ave+Display&display=swap");
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.square {
+  background-color: aqua;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 32px;
+}
+/* вибір блоку 1 */
+.square:nth-child(1) {
+  font-family: "Rubik Pixels", cursive;
+}
+
+/* вибір блоку 2 */
+.square:nth-child(2) {
+  font-family: "Sedgwick Ave Display", cursive;
+}
+
+/* вибір блоку 3 */
+.square:nth-child(3) {
+  font-family: "Dancing Script", cursive;
+}
+
+/* вибір блоку 4 */
+.square:nth-child(4) {
+  font-family: "Fjalla One", sans-serif;
+}
+
+/* вибір блоку 5 */
+.square:nth-child(5) {
+  font-family: "Indie Flower", cursive;
+}
+
+/* ---------------- */
+/* TASK 2 */
+.wrapper-task2 {
+  display: flex;
+  justify-content: space-around;
+  height: 300px;
+  background-color: bisque;
+  align-items: center;
+}
+.square-to-round {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+.square-to-round:hover {
+  background-color: gray;
+  border-radius: 50%;
+}
+
+/*  -------------- */
+/* TASK3 */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+  text-transform: capitalize;
+  color: aliceblue;
+  font-size: 40px;
+}
+.widgets {
+  background-color: rgb(36, 101, 186);
+  width: 100%;
+  height: 300px;
+}
+.wrapper-widg {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+.item {
+  width: 30%;
+  height: 250px;
+  background-color: rgb(22, 73, 155);
+  font-size: 32px;
+}
+
+.contact {
+  background-color: rgb(36, 101, 186);
+  width: 100%;
+  height: 500px;
+}
