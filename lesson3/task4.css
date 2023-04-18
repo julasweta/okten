@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  .center{
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section{
+    width: 100vw;
+    height: 50vh;
+    text-transform: capitalize;
+}
+p{
+    box-sizing: border-box;
+    width: 60vw;
+    text-align: center;
+    padding-top: 10px;
+}
+  .red{
+background-color: rgb(200, 110, 110);
+
+  }
+  .gray{
+background-color: rgb(156, 142, 142);
+
+  }
