@@ -19,9 +19,9 @@ form {
 /* */
 label {
   display: block;
-  margin-bottom: 10px;
+  margin: 10px 10px;
   font-size: 18px;
-  color: #fff;
+  color: #dad0d0;
 }
 
 label input[type="text"],
@@ -31,11 +31,11 @@ label input[type="radio"] {
   padding: 8px;
   border: 2px solid #fff;
   background-color: transparent;
-  color: #fff;
   font-size: 16px;
 }
 
-label input[type="text"]:focus,
+
+
 label input[type="radio"]:focus {
   outline: none;
   border-color: #ff5e00;
@@ -73,7 +73,7 @@ input[type="checkbox"] + label:hover {
 .wrapper-inputs {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  padding-top: 30px;
 }
 
 .wrapper-inputs input {
@@ -89,7 +89,13 @@ input[type="checkbox"] + label:hover {
 }
 
 .wrapper-inputs input:hover {
-  background-color: #3e8e41;
+  background-color: #257f28;
   color: white;
 }
-
+.wrapper-inputs input:focus {
+  background-color: #257f28;
+  color: white;
+}
+.mobile, .gender{
+  padding-top: 30px ;
+}

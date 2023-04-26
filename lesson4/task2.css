@@ -38,6 +38,9 @@ input {
   align-self: center;
   margin-bottom: 20px;
 }
+input::placeholder{
+ font-size: 6px;
+}
 .check {
   width: 10px;
   height: 10px;

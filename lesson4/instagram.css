@@ -54,25 +54,8 @@ input {
     position: relative;
     color: black;
 }
-.phone-before, .password-before{
-    content: '';
-    position: relative;
-}
-.phone-before::before, .password-before::before
- {
-    content: 'Номер телефону, імя користувача, а...';
-    position: absolute;
-    top: 50%;
-    left: 52%;
-    transform: translate(-50%, -50%);
-    font-size: 15px;
-    color: gray;
-    z-index: 5;
-    width: 100%;
-}
-
-.password-before::before {
-    content: 'Пароль';
+input::placeholder{
+    font-size: 12px;
 }
 
 
