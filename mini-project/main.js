@@ -59,15 +59,19 @@ if (idUser)
         userDiv.append(postsLink);
 
         postsLink.onclick = function () {
-            if (showPosts.style.visibility === "visible")
-             { showPosts.style.visibility = "hidden"}
-             else{showPosts.style.visibility = "visible";}
+          if (showPosts.style.visibility === "visible") {
+            showPosts.style.visibility = "hidden";
+          } else {
+            showPosts.style.visibility = "visible";
+          }
         };
 
         let showPosts = document.createElement("div");
         showPosts.classList = "show-posts";
         userDiv.append(showPosts);
 
+        /* Post Comments */
+        
         //отримання постів
         function getPosts() {
           fetch(`https://jsonplaceholder.typicode.com/users/${idUser}/posts`)
@@ -90,7 +94,7 @@ if (idUser)
       }
     });
 
-/* Post  */
+
 const idPost = urlUser.searchParams.get("idPost");
 let postWraper = document.getElementById("post");
 
@@ -151,4 +155,4 @@ if (idUser)
         }
     });
 
-/* Comments */
+
