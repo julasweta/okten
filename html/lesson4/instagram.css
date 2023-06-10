@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.instagram{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 45px;
+
+}
+.instagram-top{
+    border: 1px solid rgb(232, 229, 229);
+    border-radius: 3px;
+    width: 348px;
+    padding-top: 10px;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    
+    width: 210px;
+    height: 78px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+form{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper-inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input {
+    
+    background-color:#FAFAFA;
+    border: 1px solid rgb(234, 231, 231);
+    border-radius: 5px;
+    width: 258px;
+    height: 36px;
+    margin-top: 5px;
+    position: relative;
+    color: black;
+}
+input::placeholder{
+    font-size: 12px;
+}
+
+
+.submit{
+    background-color: rgb(0, 149, 246, 0.8
+    );
+    border-radius: 8px;
+    color: rgb(246, 240, 240);
+    width: 252px;
+    height: 32px;
+    margin-top: 12px;
+    font-weight: 600;
+}
+.another{
+    padding: 20px 0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    width: 102px;
+    height: 1px;
+    background-color: rgb(228, 224, 224);
+}
+.another span{
+    padding: 0 15px;
+}
+
+.facebook{
+    width: 55%;
+display: flex;
+justify-content: space-around;
+padding-bottom: 18px;
+}
+.facebook img{
+    width: 18px;
+    height: 18px;
+}
+.facebook a{
+    font-size: 15px;
+    color: rgb(56, 81, 133);
+    font-weight: 600;
+}
+.reminder{
+    color: rgb(0, 55, 107)
+}
+footer{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.register{
+    border: 1px solid rgb(232, 229, 229);
+    border-radius: 3px;
+    width: 348px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 17px;
+  letter-spacing: -0.5px;
+}
+.register a{
+    color: rgb(0, 149, 246);
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 4px;
+}

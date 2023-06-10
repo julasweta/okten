@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: gray;
+    background-color: aliceblue;
+    border-radius: 10%;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+p{
+    box-sizing: border-box;
+    width: 60em;
+    padding: 20px;
+text-align: center;
+}
+section{
+    width: 100vw;
+    height: 100vh;
+}
+#gray {
+    background-color: rgb(172, 157, 157);
+}
+
+
+#blue {
+    background-color: rgb(76, 150, 190);
+}
+
+
+#red {
+    background-color: rgb(190, 104, 104);
+}

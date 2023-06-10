@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task4</title>
+    <link rel="stylesheet" href="task4.css" />
+  </head>
+
+  <body>
+    <div class="container">
+        <form action="#">
+            <label for="name">Ваше ім'я: <input type="text" name="name" autofocus /></label>
+            <label for="last"> Ваше прізвище: <input type="text" name="last" /></label>
+          
+            <div class="gender">
+                <label for="gender">Ваша стать:</label>
+                
+                <input type="radio" id="woman" name="gender" value="woman" />
+                <label for="woman">Жіноча</label>
+                
+                <input type="radio" id="man" name="gender" value="man" />
+                <label for="man">Чоловіча</label>
+              </div>
+              
+          
+            <div class="mobile">
+              <label for="mobile">Послугами якої сотової компанії Ви користуєтеся:</label>
+          
+              <input type="checkbox" id="kyivstar" name="kyivstar" />
+              <label for="kyivstar" style="background-color: #009CDE;">KyivStar</label>
+          
+              <input type="checkbox" id="mts" name="mts" />
+              <label for="mts" style="background-color: #E6007E;">MTS</label>
+          
+              <input type="checkbox" id="life" name="life" />
+              <label for="life" style="background-color: #00D200;">Life</label>
+          
+              <input type="checkbox" id="peoplenet" name="peoplenet" />
+              <label for="peoplenet" style="background-color: #FFC200;">PeopleNet</label>
+          
+              <input type="checkbox" id="utel" name="utel" />
+              <label for="utel" style="background-color: #E6007E;">Utel</label>
+            </div>
+          
+            <div class="wrapper-inputs">
+              <input type="submit" value="Надіслати анкету">
+              <input type="reset"  value="Очистити бланк">
+            </div>
+          </form>
+    </div>
+  </body>
+</html>

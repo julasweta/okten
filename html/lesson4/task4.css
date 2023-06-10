@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222;
+  color: #beabab;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+form {
+  margin: 50px auto;
+  max-width: 900px;
+}
+
+/* */
+label {
+  display: block;
+  margin: 10px 10px;
+  font-size: 18px;
+  color: #dad0d0;
+}
+
+label input[type="text"],
+label input[type="radio"] {
+  display: block;
+  margin-top: 5px;
+  padding: 8px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+
+
+label input[type="radio"]:focus {
+  outline: none;
+  border-color: #ff5e00;
+}
+
+/*  */
+input[type="checkbox"]:checked + label,
+input[type="radio"]:checked + label {
+  background-color: #ff5e00;
+  color: #e4d7d7;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 1;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  display: inline-block;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+input[type="checkbox"] + label:hover {
+  background-color: #ff5e00;
+  color: #fff;
+}
+
+/*  */
+.wrapper-inputs {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.wrapper-inputs input {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  width: 200px;
+}
+
+.wrapper-inputs input:hover {
+  background-color: #257f28;
+  color: white;
+}
+.wrapper-inputs input:focus {
+  background-color: #257f28;
+  color: white;
+}
+.mobile, .gender{
+  padding-top: 30px ;
+}

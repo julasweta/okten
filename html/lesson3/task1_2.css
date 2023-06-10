@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+}
+nav {
+  background-color: rgb(213, 208, 208);
+  height: 10vh;
+}
+main {
+  display: flex;
+}
+section {
+  width: calc(100% / 3);
+  height: 80vh;
+}
+section:nth-child(1) {
+  background-color: rgb(177, 181, 182);
+}
+section:nth-child(2) {
+  background-color: rgb(83, 86, 87);
+}
+section:nth-child(3) {
+  background-color: rgb(68, 73, 73);
+}
+footer {
+  height: 10vh;
+  background-color: rgb(222, 218, 218);
+}
