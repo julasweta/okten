@@ -55,6 +55,7 @@ if (idUser)
           userDiv.append(li);
         }
         let postsLink = document.createElement("button");
+        postsLink.classList = "post-link";
         postsLink.innerText = "Post of current user";
         userDiv.append(postsLink);
 
@@ -71,7 +72,7 @@ if (idUser)
         userDiv.append(showPosts);
 
         /* Post Comments */
-        
+
         //отримання постів
         function getPosts() {
           fetch(`https://jsonplaceholder.typicode.com/users/${idUser}/posts`)
@@ -93,7 +94,6 @@ if (idUser)
         getPosts();
       }
     });
-
 
 const idPost = urlUser.searchParams.get("idPost");
 let postWraper = document.getElementById("post");
@@ -143,16 +143,42 @@ if (idUser)
             let postTitle = document.createElement("h1");
             postTitle.innerText = posts[post].title;
 
+            let postInfo = document.createElement("div");
+            postInfo.classList = "post-info";
+            let infoUser = document.createElement("a");
+            infoUser.href = `user-details.html?id=${posts[post].userId}`;
+            let infoPost = document.createElement("span");
+            infoUser.innerText = "Back to UserId - " + posts[post].userId;
+            infoPost.innerText = "Post № - " + posts[post].id;
+            postInfo.append(infoUser, infoPost);
+
             let postBody = document.createElement("p");
             postBody.classList = "post-body";
             postBody.innerText =
               posts[post].body.charAt(0).toUpperCase() +
               posts[post].body.slice(1);
 
-            postWraper.append(postTitle, postBody);
+            postWraper.append(postTitle, postInfo, postBody);
             getComments();
           }
         }
     });
 
 
+    /* Footer  */
+    const footer = document.createElement("footer");
+    const p = document.createElement("p");
+    const span = document.createElement("span");
+
+    p.textContent = "© ";
+    span.textContent = new Date().getFullYear();
+    p.appendChild(span);
+    p.textContent += " Всі права захищені.";
+    footer.appendChild(p);
+
+    let container = document.getElementsByClassName('container');
+    container[0].append(footer);
+   
+    const year = new Date().getFullYear();
+    const yearElement = document.getElementById("year");
+    yearElement.textContent = year;
