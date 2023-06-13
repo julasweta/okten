@@ -7,8 +7,8 @@ fetch(url)
   .then((users) => {
    
       for (const user of users) {
-        let divUser = document.createElement("div");
-        divUser.classList = "user-card";
+        let userCard = document.createElement("div");
+        userCard.classList = "user-card";
         let userId = document.createElement("div");
         userId.classList = "user-id";
         userId.innerText = "id - " + user.id;
@@ -23,10 +23,15 @@ fetch(url)
         let a = document.createElement("a");
         a.classList = "user-details-link";
         a.href = `./user/user-details.html?id=${user.id}`;
-        a.innerText = "Детальніше...";
+         userCard.appendChild(userId);
+         userCard.appendChild(userName);
+       
+         let detailsText = document.createTextNode("Детальніше...");
+         userCard.appendChild(detailsText);
 
-        usersDiv.append(divUser);
-        divUser.append(userId, userName, a);
+        usersDiv.append(a);
+        a.append(userCard);
+       
       }
   });
 
