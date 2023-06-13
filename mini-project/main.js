@@ -30,9 +30,7 @@ fetch(url)
       }
   });
 
-//user
 
-//post
 
     /* Footer  */
     const footer = document.createElement("footer");
@@ -48,6 +46,7 @@ fetch(url)
     let container = document.getElementsByClassName('container');
     container[0].append(footer);
    
-    const year = new Date().getFullYear();
-    const yearElement = document.getElementById("year");
-    yearElement.textContent = year;
+
+
+
+  

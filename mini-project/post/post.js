@@ -1,3 +1,4 @@
+/* POST */ 
 const currentURL = window.location.href;
 let urlUser = new URL(currentURL);
 const idUser = urlUser.searchParams.get("id");
@@ -42,29 +43,28 @@ function getComments() {
 fetch(`https://jsonplaceholder.typicode.com/users/${idUser}/posts`)
   .then((response) => response.json())
   .then((posts) => {
-    
-      for (let post in posts) {
-        if (idPost == posts[post].id) {
-          let postTitle = document.createElement("h1");
-          postTitle.innerText = posts[post].title;
+    for (let post in posts) {
+      if (idPost == posts[post].id) {
+        let postTitle = document.createElement("h1");
+        postTitle.innerText = posts[post].title;
 
-          let postInfo = document.createElement("div");
-          postInfo.classList = "post-info";
-          let infoUser = document.createElement("a");
-          infoUser.href = `../user/user-details.html?id=${posts[post].userId}`;
-          let infoPost = document.createElement("span");
-          infoUser.innerText = "Back to UserId - " + posts[post].userId;
-          infoPost.innerText = "Post № - " + posts[post].id;
-          postInfo.append(infoUser, infoPost);
+        let postInfo = document.createElement("div");
+        postInfo.classList = "post-info";
+        let infoUser = document.createElement("a");
+        infoUser.href = `../user/user-details.html?id=${posts[post].userId}`;
+        let infoPost = document.createElement("span");
+        infoUser.innerText = "Back to UserId - " + posts[post].userId;
+        infoPost.innerText = "Post № - " + posts[post].id;
+        postInfo.append(infoUser, infoPost);
 
-          let postBody = document.createElement("p");
-          postBody.classList = "post-body";
-          postBody.innerText =
-            posts[post].body.charAt(0).toUpperCase() +
-            posts[post].body.slice(1);
+        let postBody = document.createElement("p");
+        postBody.classList = "post-body";
+        postBody.innerText =
+          posts[post].body.charAt(0).toUpperCase() + posts[post].body.slice(1);
 
-          postWraper.append(postTitle, postInfo, postBody);
-          getComments();
-        }
+        postWraper.append(postTitle, postInfo, postBody);
+        
+        getComments();
       }
+    }
   });
