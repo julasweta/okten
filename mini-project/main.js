@@ -22,17 +22,8 @@ fetch(url)
 
         let a = document.createElement("a");
         a.classList = "user-details-link";
-<<<<<<< HEAD
         a.href = `mini-project/user/user-details.html?id=${user.id}`;
         a.innerText = "Детальніше...";
-=======
-        a.href = `./user/user-details.html?id=${user.id}`;
-         userCard.appendChild(userId);
-         userCard.appendChild(userName);
-       
-         let detailsText = document.createTextNode("Детальніше...");
-         userCard.appendChild(detailsText);
->>>>>>> main
 
         usersDiv.append(a);
         a.append(userCard);
