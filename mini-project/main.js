@@ -22,7 +22,7 @@ fetch(url)
 
         let a = document.createElement("a");
         a.classList = "user-details-link";
-        a.href = `user/user-details.html?id=${user.id}`;
+        a.href = `mini-project/user/user-details.html?id=${user.id}`;
         a.innerText = "Детальніше...";
 
         usersDiv.append(divUser);
